@@ -1,0 +1,6 @@
+#!/bin/bash
+filename="AssetTag.txt"
+
+rm /$filename
+dmidecode | grep UUID | cut -d ":" -f 2 | sed -e 's/^[ \t]*//' >> /$filename 2> /error.log
+

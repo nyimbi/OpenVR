@@ -1,0 +1,12 @@
+#!/bin/bash
+filename="SystemInfo.txt"
+
+rm /$filename
+
+echo "MAC Address:" >> /$filename
+ifconfig -a | grep HWaddr | cut -d " " -f 11 | sed -e 's/^[ \t]*//' >> /$filename.txt 2> /error.log
+echo " ">> /$filename.txt 2> /error.log
+echo "System UUID:" >> /$filename
+dmidecode | grep UUID | cut -d ":" -f 2 | sed -e 's/^[ \t]*//' >> /$filename 2> /error.log
+
+

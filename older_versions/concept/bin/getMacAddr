@@ -1,0 +1,5 @@
+#!/bin/bash
+filename="MacAddress.txt"
+
+rm /$filename
+ifconfig -a | grep HWaddr | cut -d " " -f 11 | sed -e 's/^[ \t]*//' >> /$filename 2> /error.log

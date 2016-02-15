@@ -1,0 +1,11 @@
+bin/
+concept
+database/
+docs/
+enroll
+photos/
+resources/
+scripts/
+stored_minutiae/
+templates/
+tmp/
