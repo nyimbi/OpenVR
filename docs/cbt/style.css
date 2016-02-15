@@ -1,0 +1,13 @@
+#closeBtn{
+	right:0;
+	position:absolute;
+	
+
+}
+
+#closeBtn input{
+	color:red;
+	padding:3px 40px;
+	font-weight:bold;
+	cursor:pointer;
+}
