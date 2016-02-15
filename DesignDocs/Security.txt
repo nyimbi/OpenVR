@@ -1,0 +1,42 @@
+This is a response to the report of Kano INEC Office, who made some key observations on the training systems, for which we thank him.
+It is to be noted that the computers used for training and to which these comments apply are not production systems. The training computers were not the basic security features implemented in the production system.
+The training systems were configured for easy access in the training environment E.g – all users had the same password nor was the BIOs password protected.
+Aminu attempted these experiments on a production system and he was happy to note that all the issues he raised and others he had not considered had all been fully and comprehensively addressed.
+Hereunder, please find brief responses to each of the issues raised:
+
+Issue 1:
+CMOS/BIOS Access
+
+Description:
+Having access to the CMOS/BIOS settings means that the booting sequence can be changed to an external hard disk or CD.
+
+Response:
+As part of the RFQ, manufacturers of the DDC machines are providing a locked BIOS. Without the password installed by the manufacturers, the booting sequence cannot be changed from the default (from internal hard drive) to any other device, thereby effectively blocking external access at this level to the filesystem, operating system and internal components.
+
+Furthermore, factory default settings required and to which all production systems will conform are as follows:
+The BIOS is passworded from the factory
+That the boot order is hard drive first.
+That the time is set to Nigerian time at the factory
+That the INEC logo displays during POST (Power On Self Test) and Boot
+All laptops have a large indelible INEC marking
+This addresses the issues raised in the training laptop where the BIOS was not passworded.
+It is important to note here, that by using an external CDROM or drive, one may be able to boot as root and gain complete control of the system, including the ability to add, modify and delete files. This is not possible in a production system. It may be of interest to note that a second layer of security beyond this has been implemented by encrypting the OpenVR data-store. We reiterate that the computer to be used in production has a password protected BIOS, and this access is impossible without the password. The only people who know this password are : The Director (ICT); the Consultant; and the Chairman.
+
+Issue 2:
+Opening of a default file manager on insertion of external harddrive.
+
+Response:
+The production system has been stripped of all software other than that strictly required for Voter Registration.
+
+Issue 3:
+Access to the internet.
+
+Response:
+The production system has the network interface disabled by default.
+
+
+Issue 4:
+User ID compromise as vector for unauthorized MySQL database access
+
+Response:
+True. But the user id cannot be compromised because of multiple layers of security – encryption, redirection and safety.
