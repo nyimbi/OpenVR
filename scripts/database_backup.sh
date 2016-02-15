@@ -1,0 +1,1 @@
+mysqldump -u openvr --password=9p98qysYZRE2hu4K openvr |gzip > database/create_database_`date +%Y%m%d_%H.%M.%S`.sql

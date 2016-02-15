@@ -1,0 +1,2 @@
+authorizedScript=1;	
+

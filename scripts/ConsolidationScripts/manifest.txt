@@ -1,0 +1,12 @@
+bin/
+concept
+database/
+docs/
+enroll
+photos/
+resources/
+scripts/
+templates/
+sql/
+patch_scripts/
+tmp/
